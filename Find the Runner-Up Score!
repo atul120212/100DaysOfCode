@@ -1,0 +1,5 @@
+n = int(input())
+arr = list(map(int, input().split()))
+arr.sort()
+ar=arr.index(max(arr))
+print(arr[ar-1])
