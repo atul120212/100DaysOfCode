@@ -1,0 +1,11 @@
+a = int(input())
+M=set([ int(i) for i in input().split(" ")])
+b = int(input())
+N=set([int(i) for i in input().split(" ")])
+c=M.union(N)
+d=M.intersection(N)
+symmetricdif=c-d
+L=list(symmetricdif)
+L.sort()
+for i in L:
+    print(i)
